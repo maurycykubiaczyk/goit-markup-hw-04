@@ -417,3 +417,42 @@ body {
   background-color: var(--blue-color);
   fill: var(--white-color);
 }
+/* nasi klienci */
+.our-customers {
+  color: var(--brand-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clients-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding-left: 15px;
+}
+.client-box {
+  width: 170px;
+  height: 72px;
+  border: 1px solid var(--social-media-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.client-logo {
+  fill: var(--social-media-color);
+  --brown-color: currentColor;
+}
+.client-box:hover {
+  fill: var(--blue-color);
+  border-color: var(--blue-color);
+}
+.client-box:hover svg {
+  fill: var(--blue-color);
+}
+/* .client-logo:hover{
+  fill: var(--blue-color);
+} */
