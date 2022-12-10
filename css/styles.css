@@ -7,6 +7,7 @@
   --brown-color: #757575;
   --black-color: #000000;
   --border-color: #ececec;
+  --social-media-color: #AFB1B8;
 }
 * {
   margin: 0px;
@@ -90,6 +91,10 @@ body {
 /* title button */
 .dark-bg {
   background: #2f303a;
+  background-image: url("../images/background_photo.jpg");
+  max-width: 1600px;
+  max-height: 600px;
+  background-image: rgba(47, 48, 58, 0.4);
 }
 .header-and-button {
   display: flex;
@@ -98,7 +103,6 @@ body {
   justify-content: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  
 }
 .header {
   color: var(--white-color);
@@ -110,7 +114,6 @@ body {
   text-align: center;
   width: 696px;
   height: 120px;
- 
 }
 .main-button {
   cursor: pointer;
@@ -126,20 +129,30 @@ body {
   font-family: inherit;
   padding: 10px 42px 10px 41px;
   margin-top: 30px;
-  
 }
 .text-list {
   list-style: none;
   display: flex;
   padding: 0px;
+  margin: 0px;
   gap: 30px;
   padding-top: 94px;
-  padding-left: 15px;
+  /* padding-left: 15px; */
+  flex-wrap: wrap;
+  max-width: 1215px;
+  align-items: center;
+}
+.icons-background {
+  width: 270px;
+  height: 120px;
+  background-color: var(--white2-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .whole-text {
-  display: inline;
-  
+  display: inline-block;
 }
 .text-title {
   color: var(--brand-color);
@@ -207,7 +220,8 @@ body {
   max-width: 100%;
   padding: 0px;
   margin: 0px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team-name {
@@ -225,7 +239,7 @@ body {
   font-size: 16px;
   line-height: 1.89;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   margin-top: 10px;
   margin-bottom: 0px;
 }
@@ -292,7 +306,6 @@ body {
   cursor: pointer;
   font-family: inherit;
   padding: 6px 22px 6px 22px;
-  
 }
 .filter-button:hover {
   background-color: var(--blue-color);
@@ -309,7 +322,7 @@ body {
 }
 .projects-photo {
   margin: 0px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 .projects-description {
   padding-top: 20px;
@@ -322,7 +335,6 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  
 }
 .projects-category {
   color: var(--brown-color);
@@ -330,7 +342,6 @@ body {
   font-size: 16px;
   line-height: 1.86;
   letter-spacing: 0.03em;
-  
 }
 
 /* flexbox-header */
@@ -356,7 +367,6 @@ body {
 }
 .header-links li {
   display: flex;
-  
 }
 .contacts {
   display: flex;
@@ -364,6 +374,46 @@ body {
 }
 .contacts li {
   display: flex;
-  
 }
-/* flexbox header button */
+/* icons svg */
+.icon-envelope {
+  --brown-color: currentColor;
+  fill: var(--brown-color);
+  vertical-align: middle;
+  margin-top: 2px;
+}
+.contact-mail,
+.contact-phone {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.icon-smartphone {
+  --brown-color: currentColor;
+  fill: var(--brown-color);
+  vertical-align: middle;
+}
+/* social media svg */
+.social-medias {
+  display: flex;
+  justify-content: center;
+  fill: var(--social-media-color);
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+.social-medias-background {
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.social-medias-background:hover {
+  background-color: var(--blue-color);
+  fill: var(--white-color);
+}
