@@ -453,6 +453,38 @@ body {
 .client-box:hover svg {
   fill: var(--blue-color);
 }
-/* .client-logo:hover{
-  fill: var(--blue-color);
-} */
+/* footer social media */
+.join-us {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 12px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-medias {
+  list-style: none;
+  margin-left: 70px;
+}
+.footer-wrapper {
+  display: flex;
+  }
+  .social-medias-footer {
+  display: flex;
+  justify-content: center;
+  fill: var(--white-color);
+  padding-top: 20px;
+  gap: 10px;
+}
+.social-medias-background {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
