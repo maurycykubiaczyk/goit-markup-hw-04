@@ -94,7 +94,12 @@ body {
   background-image: url("../images/background_photo.jpg");
   max-width: 1600px;
   max-height: 600px;
-  background-image: rgba(47, 48, 58, 0.4);
+  width: 1600px;
+  align-items: center;
+}
+.background-gradient {
+max-width: 1600px;
+background: rgba(47, 48, 58, 0.4);
 }
 .header-and-button {
   display: flex;
@@ -387,13 +392,14 @@ body {
   --brown-color: currentColor;
   fill: var(--brown-color);
   vertical-align: middle;
-  margin-top: 2px;
+  
 }
+
 .contact-mail,
 .contact-phone {
   display: flex;
   gap: 10px;
-  text-align: center;
+  align-items: center;
   justify-content: center;
 }
 .icon-smartphone {
@@ -441,9 +447,9 @@ body {
   padding-left: 15px;
 }
 .client-box {
-  width: 170px;
-  height: 72px;
+  padding: 16px 32px 16px 32px;
   border: 1px solid var(--social-media-color);
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
