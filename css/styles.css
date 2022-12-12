@@ -92,10 +92,11 @@ body {
 .dark-bg {
   background: #2f303a;
   background-image: url("../images/background_photo.jpg");
+  background-position: center;
+  background-size: cover;
   max-width: 1600px;
   max-height: 600px;
   width: 1600px;
-  align-items: center;
 }
 .background-gradient {
 max-width: 1600px;
@@ -444,7 +445,6 @@ background: rgba(47, 48, 58, 0.4);
   list-style: none;
   display: flex;
   gap: 30px;
-  padding-left: 15px;
 }
 .client-box {
   padding: 16px 32px 16px 32px;
