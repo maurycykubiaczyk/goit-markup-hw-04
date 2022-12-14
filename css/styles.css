@@ -89,15 +89,16 @@ body {
   color: var(--blue-color);
 }
 /* title button */
-.dark-bg {
-  background: #2f303a;
+
+.background-hero {
   background-image: url("../images/background_photo.jpg");
   background-position: center;
   background-size: cover;
   margin: 0 auto;
+  max-width: 1600px;
 }
 .background-gradient {
-  background: rgba(47, 48, 58, 0.4);
+background: rgba(47, 48, 58, 0.4);
 }
 .header-and-button {
   display: flex;
